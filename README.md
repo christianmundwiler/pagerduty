@@ -11,3 +11,5 @@ This python program allows the user to create a PagerDuty incident, update the l
 Steps for installing package requirements: run terminal command ```pip install -r requirements.txt``` in pagerduty directory.
 
 Steps for running file: run terminal command ```python pagerduty.py``` in pagerduty directory.
+
+Testing was deemed unnecessary based off the minimal functionality and because the functions weren't manipulating data.
