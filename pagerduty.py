@@ -1,18 +1,17 @@
 # Christian Mundwiler
 # 1.22.24
 
-# This python program allows the user to create an incident, update the last incident, and list all incidents in PagerDuty.
-
-import os
+from os import getenv
 import requests
-from json import loads, dumps
+from json import dumps
 from dotenv import load_dotenv
 
+# use external library to load env variables
 load_dotenv()
 
 # get user data from .env
-api_token = os.getenv("pd_token")
-user_email = os.getenv("user_email")
+api_token = getenv("pd_token")
+user_email = getenv("user_email")
 
 # Create incident
 # create payload
